@@ -1,0 +1,193 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+#menu_principal{
+    display: block;
+    position: relative;
+    background-color: #000;
+}
+
+#menu_principal ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: left;
+    align-items: center; 
+}
+
+#menu_principal ul a{
+    display: flex;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.3em;
+    height: 5vh;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    transition: .5s;
+}
+
+.item{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#menu_principal ul #logo{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#menu_principal ul a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#menu_principal ul .item:hover{
+    background-color: #FFBD59;
+}
+
+
+#conteudo{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+aside{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: start;
+    width: 20%;
+    margin: 4% 2%;
+}
+
+#banner_lateral{
+    display: flex;
+
+    overflow: hidden;
+    box-shadow: -0.6em 0.6em 1em #000;
+}
+
+#banner_lateral img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 70%;
+    border-left: .2em solid rgba(43, 43, 43, .8);
+    border-right: .2em solid rgba(43, 43, 43, .8);
+    margin: 2% 0;
+    padding: 2% 2%;
+}
+
+#menu_lateral{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 10%;
+    margin: 4% 2%; 
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blocos_pratos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2% 6%;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5.5px);
+    border-radius: 1em;
+    margin-bottom: 4%;
+    
+}
+
+.pratos{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.blocos_pratos tr .img_cardapio{
+    display: block;
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+
+.blocos_pratos tr .img_cardapio img{
+    display: block;
+    position: relative;
+    object-fit: cover;  
+    width: 100%;
+    height: 100%;
+    border: .2em solid #fff;  
+    border-radius: 1em;
+}
+
+.infos_cardapio{
+    width: 100%;
+    height: 100%;
+    padding-left: 8%;
+    text-align: justify;
+}
+
+.infos_cardapio h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+
+}
+
+caption span{
+    display: block;
+    float: left;
+    font-size: 1.8em;
+    margin-bottom: 2%;
+}
+
+tr{
+    padding-bottom: 50%;
+}
+
+footer{
+    display: block;
+    position: relative;
+    background-color: #000;
+}
+
+footer span{
+    display: block;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 1%;
+}
