@@ -1,4 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300&family=Roboto:wght@100;500&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
 
 *{
     padding: 0;
@@ -11,6 +16,7 @@ body{
     background-image: url("../img/bg-2.jpg");
     background-repeat: no-repeat;
     background-blend-mode: overlay;
+    font-family: 'Roboto', sans-serif;
 }
 
 #imagem_menu{
@@ -83,15 +89,65 @@ body{
 }
 
 article{
-    display: block;
+    display: flex;
     position: relative;
     width: 80%;
     color: #fff;
-    text-align: justify;
+    justify-content: center;
+    align-items: center;
     border-right: .2em solid rgba(43, 43, 43, .8);
     margin: 2% 0;
     padding: 2% 2%;
 }
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+#apresentacao_img{
+    display: block;
+    width: 30%;
+    overflow: hidden;
+    margin-right: 4%;
+    border-radius: 1em;
+    border: .4em solid #FFBD59;
+}
+
+#apresentacao_img img{
+    display: block;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+#apresentacao{
+    display: block;
+    width: 60%;
+}
+
+#apresentacao h1{
+    font-size: 2em;
+    color: #FFBD59;
+    padding-bottom: 2%;
+    border-bottom: .1em solid rgba(255, 189, 89, 0.5);
+}
+
+#apresentacao p{
+    margin-top: 4%;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+
+}
+
+/*
+#e4552e
+#FFBD59
+*/
 
 aside{
     display: flex;
