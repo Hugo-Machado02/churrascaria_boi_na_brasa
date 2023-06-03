@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300&family=Roboto:wght@100;500&display=swap');
 
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
     background-color: rgba(0, 0, 0, .6);
     background-image: url("../img/bg-2.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-blend-mode: overlay;
+
 }
 
 #menu_principal{
@@ -78,9 +84,10 @@ aside{
 
 #banner_lateral{
     display: flex;
-
     overflow: hidden;
     box-shadow: -0.6em 0.6em 1em #000;
+    border: .2em solid #e4552e;
+    border-radius: 1em;
 }
 
 #banner_lateral img{
@@ -97,8 +104,17 @@ section{
     width: 70%;
     border-left: .2em solid rgba(43, 43, 43, .8);
     border-right: .2em solid rgba(43, 43, 43, .8);
-    margin: 2% 0;
-    padding: 2% 2%;
+    margin-top: 2%;
+    padding: 0 4%;
+}
+
+section header h1{
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+    color: #FFBD59;
+    text-shadow: -.05em .05em .2em rgba(255, 255, 255, 0.6);
+    margin-bottom: 4%;
 }
 
 #menu_lateral{
@@ -112,10 +128,9 @@ section{
 article{
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.blocos_pratos{
+.blocos{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -128,43 +143,61 @@ article{
     
 }
 
-.pratos{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.blocos_pratos tr .img_cardapio{
+.blocos tr .img_cardapio{
     display: block;
     position: relative;
     width: 20vh;
     height: 20vh;
-    margin-bottom: 10%;
     overflow: hidden;
 }
 
-.blocos_pratos tr .img_cardapio img{
+
+.blocos tr .img_cardapio img{
     display: block;
     position: relative;
     object-fit: cover;  
     width: 100%;
     height: 100%;
-    border: .2em solid #fff;  
+    border: .4em solid #FFBD59;  
     border-radius: 1em;
 }
 
+tr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
 .infos_cardapio{
-    width: 100%;
-    height: 100%;
-    padding-left: 8%;
-    text-align: justify;
+    padding-left: 4%;
+    justify-content: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.elemento_cardapio td{
+    padding-bottom: 2%;
+    border-bottom: .2em solid rgba(175, 175, 175, 0.4);
+}
+
+.infos_cardapio h1, p, span{
+    display: block;
+    text-align: left;
 }
 
 .infos_cardapio h1{
-    display: flex;
-    flex-direction: column;
-    font-size: 2em;
-
+    font-size: 1.7em;
+    color: #e4552e;
+}
+.infos_cardapio p{
+    margin-top: 1%;
+    font-size: 1.2em;
+    color: #FFBD59;
+}
+.infos_cardapio span{
+    margin-top: 2%;
+    font-size: 1.5em;
 }
 
 caption span{
@@ -174,8 +207,64 @@ caption span{
     margin-bottom: 2%;
 }
 
-tr{
-    padding-bottom: 50%;
+#menu_lateral ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+}
+
+#menu_lateral ul .item_lateral{
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    background-color: #000;
+    border-radius: 1em;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 18vh;
+    height: 7vh;
+    margin-bottom: 10%;
+    font-size: 1em;
+    transition: .5s;
+}
+
+#menu_lateral ul .item_lateral:hover{
+    background-color: #FFBD59;
+}
+
+section footer{
+    width: 100%;
+    display: block;
+    color: #e4552e;
+    background: rgba(59, 59, 59, 0.6);
+    backdrop-filter: blur(5.5px);
+    border-radius: 1em 1em 0 0;
+}
+
+#contato{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.elemento_contato{
+    width: 100%;
+}
+
+#contato h2{
+    font-size: 1.1em;
+}
+
+#contato span{
+    font-size: .7em;
+    font-weight: 300;
 }
 
 footer{
